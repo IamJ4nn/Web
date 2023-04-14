@@ -1,40 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
 
-<head>
-	<meta charset="UTF-8">
-	<title>Grilla normal</title>
-	<style>
-		table {
-			border-collapse: collapse;
-			width: 100%;
-		}
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+      }
 
-		th,
-		td {
-			border: 1px solid black;
-			padding: 8px;
-			text-align: center;
-		}
+      th {
+        background-color: #ccc;
+      }
 
-		th {
-			background-color: #ccc;
-		}
-
-		tr:hover {
-			background-color: #f5f5f5;
-		}
-	</style>
-</head>
-
-<body>
-	<header>
-		<h4>2. Grillas</h4>
-	</header>
-	<ul>
-		<li><a href="#normal">Normal</a></li>
-		<li><a href="#avanzada">Avanzada</a></li>
-	</ul>
-</body>
-
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <ol>
+      <li>Formularios</li>
+      <ul>
+        <li><a href="./datos.html">Datos usuario</a></li>
+        <li><a href="./frases.html">Frases celebres de usuario</a></li>
+      </ul>
+      <li>Grillas</li>
+      <ul>
+        <li><a href="#normal">Normal</a></li>
+        <li><a href="#avanzada">Avanzada</a></li>
+      </ul>
+      <li>Lenguajes</li>
+      <ul>
+        <li><a href="#lenguajes">Lenguajes</a></li>
+    </ul>
+    </ol>
+  </body>
 </html>
