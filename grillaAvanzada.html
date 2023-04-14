@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Personajes de Comics</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		th,
+		td {
+			border: 1px solid black;
+			padding: 8px;
+			text-align: center;
+		}
+
+		th {
+			background-color: #ccc;
+		}
+
+		tr:nth-child(even) {
+			background-color: #f5f5f5;
+		}
+
+		tr:hover {
+			background-color: #c2e4fc;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Personajes de Comics</h1>
+	</header>
+	<main>
+		<table>
+			<thead>
+				<tr>
+					<th>Nombre</th>
+					<th>Editorial</th>
+					<th>Identidad Secreta</th>
+					<th>Link</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Superman</td>
+					<td>DC Comics</td>
+					<td>Clart Ken</td>
+					<td><button onclick="window.location.href='https://www.dc.com'">DC</button></td>
+				</tr>
+				<tr>
+					<td>Batman</td>
+					<td>DC Comics</td>
+					<td>Bruce Wayne</td>
+					<td><button onclick="window.location.href='https://www.dc.com'">DC</button></td>
+				</tr>
+				<tr>
+					<td>Captain America</td>
+					<td>Marvel</td>
+					<td>Steve Rogers</td>
+					<td><button onclick="window.location.href='https://www.marvel.com'">Marvel</button></td>
+				</tr>
+				<tr>
+					<td>Spider-Man</td>
+					<td>Marvel</td>
+					<td>Peter Parker</td>
+					<td><button onclick="window.location.href='https://www.marvel.com'">Marvel</button></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<button onclick="window.location.href='index.html'">Volver al menú</button>
+	</main>
+	<footer>
+		<p>&copy; 2023 UIS</p>
+	</footer>
+</body>
+
+</html>
