@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+
+body {
+    font-family: 'Cantarell', sans-serif;
+    max-width: max-content;
+    margin: auto;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 20px;
+    padding: 15% 0 15%;
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.09);
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 2px 2px 2px;
+    height: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0;
+}
+
+input[type=button] {
+    width: 60%;
+    height: 45px;
+    margin-top: 15px;
+    font-size: 25px;
+    border-radius: 25px;
+    background-color: #3584e4;
+}
+
+label {
+    font-size: 24px;
+}
