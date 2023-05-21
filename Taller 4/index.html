@@ -8,26 +8,26 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Registro de usuarios</h1>
+    <h1 class="titulo">Registro de usuarios</h1>
     <form>
-      <label for="user">Id Usuario</label> <br />
-      <input type="number" name="user" id="user" placeholder=" Id usuario" /> <br />
-      <label for="pais">Id País</label> <br />
-      <input type="number" name="pais" id="pais" placeholder=" Id País" /> <br />
-      <label for="nombre">Nombre</label> <br />
-      <input type="text" name="nombre" id="nombre" placeholder=" Nombres" /> <br />
-      <label for="apellidos">Apellidos</label> <br />
-      <input type="text" name="apellidos" id="apellidos" placeholder=" Apellidos" /> <br />
-      <label for="direccion">Dirección</label> <br />
-      <input type="text" name="direccion" id="direccion" placeholder=" Dirección" /> <br />
-      <label for="cedula">Cedula de ciudadania</label> <br />
-      <input type="text" name="cedula" id="cedula" placeholder=" CC" /> <br />
-      <label for="contrasena">Contraseña</label> <br />
-      <input type="password" name="contrasena" id="contrasena" placeholder=" Contraseña" /> <br />
-      <label for="email">E-mail</label> <br />
-      <input type="email" name="email" id="email" placeholder=" E-mail" /> <br />
-      <label for="telefono">Teléfono</label> <br />
-      <input type="text" name="telefono" id="telefono" placeholder=" Teléfono" /> <br />
+      <label for="user" class="label">Id Usuario</label> <br />
+      <input type="number" name="user" id="user" class="numerico" placeholder="Id usuario" /> <br />
+      <label for="pais" class="label">Id País</label> <br />
+      <input type="number" name="pais" id="pais" class="numerico" placeholder="Id País" /> <br />
+      <label for="nombre" class="label">Nombre</label> <br />
+      <input type="text" name="nombre" id="nombre" class="texto" placeholder="Nombres" onkeydown="limit(this);" onkeyup="limit(this);"/> <br />
+      <label for="apellidos" class="label">Apellidos</label> <br />
+      <input type="text" name="apellidos" id="apellidos" class="texto" placeholder="Apellidos" /> <br />
+      <label for="direccion" class="label">Dirección</label> <br />
+      <input type="text" name="direccion" id="direccion" class="texto" placeholder="Dirección" /> <br />
+      <label for="cedula" class="label">Cedula de ciudadania</label> <br />
+      <input type="text" name="cedula" id="cedula" class="texto" placeholder="CC" /> <br />
+      <label for="contrasena" class="label">Contraseña</label> <br />
+      <input type="password" name="contrasena" id="contrasena" class="pass" placeholder="Contraseña" /> <br />
+      <label for="email" class="label">E-mail</label> <br />
+      <input type="email" name="email" id="email" class="correo" placeholder="E-mail" /> <br />
+      <label for="telefono" class="label">Teléfono</label> <br />
+      <input type="text" name="telefono" id="telefono" class="texto" placeholder="Teléfono" /> <br />
       <input type="button" value="Registrarme">
     </form>
     <script src="main.js"></script>
