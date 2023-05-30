@@ -9,26 +9,26 @@
   </head>
   <body>
     <h1 class="titulo">Registro de usuarios</h1>
-    <form>
+    <form id="formulario">
       <label for="user" class="label">Id Usuario</label> <br />
       <input type="number" name="user" id="user" class="numerico" placeholder="Id usuario" /> <br />
       <label for="pais" class="label">Id País</label> <br />
       <input type="number" name="pais" id="pais" class="numerico" placeholder="Id País" /> <br />
       <label for="nombre" class="label">Nombre</label> <br />
-      <input type="text" name="nombre" id="nombre" class="texto" placeholder="Nombres" onkeydown="limit(this);" onkeyup="limit(this);"/> <br />
-      <label for="apellidos" class="label">Apellidos</label> <br />
-      <input type="text" name="apellidos" id="apellidos" class="texto" placeholder="Apellidos" /> <br />
+      <input type="text" name="nombre" id="nombre" class="texto" placeholder="Nombres" maxlength="25" /> <br />
+      <label for="apellidos" class="label">Apellido</label> <br />
+      <input type="text" name="apellidos" id="apellidos" class="texto" placeholder="Apellidos" maxlength="25" /> <br />
       <label for="direccion" class="label">Dirección</label> <br />
-      <input type="text" name="direccion" id="direccion" class="texto" placeholder="Dirección" /> <br />
+      <input type="text" name="direccion" id="direccion" class="texto" placeholder="Dirección" pattern="^(cra|CRA|cll|CLL|av|AV|anv|ANV|trans|TRANS)[A-Za-z0-9\#\ \-]{1, 25}$"/> <br />
       <label for="cedula" class="label">Cedula de ciudadania</label> <br />
-      <input type="text" name="cedula" id="cedula" class="texto" placeholder="CC" /> <br />
+      <input type="text" name="cedula" id="cedula" class="texto" placeholder="CC" required="required" pattern="[A-Za-z0-9]{10,20}"/> <br />
       <label for="contrasena" class="label">Contraseña</label> <br />
       <input type="password" name="contrasena" id="contrasena" class="pass" placeholder="Contraseña" /> <br />
       <label for="email" class="label">E-mail</label> <br />
       <input type="email" name="email" id="email" class="correo" placeholder="E-mail" /> <br />
       <label for="telefono" class="label">Teléfono</label> <br />
       <input type="text" name="telefono" id="telefono" class="texto" placeholder="Teléfono" /> <br />
-      <input type="button" value="Registrarme">
+      <button type="submit" form="formulario" formmethod="GET">Registrarme</button>
     </form>
     <script src="main.js"></script>
   </body>
