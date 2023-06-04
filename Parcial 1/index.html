@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center">Web Developer</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h3>Formulario de afiliación</h3>
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="text" id="nombreInput" placeholder="Nombre" />
+            <label for="nombreInput">Nombre</label>
+          </div>
+          <div class="input-field col s12">
+            <input type="email" id="emailInput" placeholder="Email" />
+            <label for="emailInput">Email</label>
+          </div>
+          <div class="input-field col s12">
+            <input type="tel" id="telefonoInput" placeholder="Teléfono" />
+            <label for="telefonoInput">Teléfono</label>
+          </div>
+          <div class="col s12">
+            <div class="row">
+              <div class="input-field col s4">
+                <input type="text" id="gustoInput" placeholder="Gusto" />
+                <label for="gustoInput">Gusto</label>
+              </div>
+              <div class="input-field col s4">
+                <input
+                  type="number"
+                  id="porcentajeInput"
+                  placeholder="Porcentaje"
+                />
+                <label for="porcentajeInput">Porcentaje</label>
+              </div>
+              <div class="col s4">
+                <button
+                  class="btn waves-effect waves-light"
+                  onclick="agregarFila()"
+                >
+                  Agregar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-container container">
+        <h3>Gustos</h3>
+        <table class="striped">
+          <thead>
+            <tr>
+              <th>Gusto</th>
+              <th>Porcentaje</th>
+              <th>Editar</th>
+            </tr>
+          </thead>
+          <tbody id="tablaGustos"></tbody>
+        </table>
+        <div id="messageContainer" class="message"></div>
+        <div id="buttonsContainer" class="buttons"></div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
